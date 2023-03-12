@@ -31,4 +31,8 @@ Copyright  TigerClips1 © 2023 All Rights Reserved
 
 7. Goodbye
 
+### what dose this cript do ###
+
+this script will download a PS4 expliotable Update to your USB for Linux only this will not hack your PS4 or jalibreake it will just download Update that have been hack by other Hacker in The PS4 scene when there a new jalibreak then this script will be upodate.
+
 Thanks For Reading
