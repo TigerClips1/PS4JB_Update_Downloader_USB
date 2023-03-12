@@ -23,7 +23,7 @@ Copyright  TigerClips1 © 2023 All Rights Reserved
 
 3. you need to run the runmefirst.sh as root to get your USB name
 
-4. run PS4JB_System_Update.py as root and chose
+4. run PS4JB_System_Update.py as root and choose
 
 5. when done check the md5 hash
 
@@ -33,6 +33,6 @@ Copyright  TigerClips1 © 2023 All Rights Reserved
 
 ### what dose this script do ###
 
-this script will download a PS4 expliotable Update to your USB for Linux only this will not hack your PS4 or jalibreake it will just download Update that have been hack by other Hacker in The PS4 scene when there a new jalibreak then this script will be update.
+this script will download a PS4 exploitable Update to your USB for Linux only this will not hack your PS4 or jailbreak it will just download Update that have been hacked by other hackers in The PS4 scene when theres a new jailbreak then this script will be updated.
 
 Thanks For Reading

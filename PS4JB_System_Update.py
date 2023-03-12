@@ -8,7 +8,7 @@ name = input("Please Enter your  linux name on your linux PC or WSL or VM: ") #a
 
 print("if you don't know the path to your USb run the runmefirst.sh then you will see your usb path\n")
 
-USB = input("Please Enter your USB dircotry name: ") #ask the user for the usb name witch can be obtain on the RunMefirst.sh
+USB = input("Please Enter your USB dircotry name: ") #ask the user for the usb name which can be obtained on the RunMefirst.sh
 
 Arch = "sudo pacman -Syyu && sudo pacman -S wget" #install Requirement for Arch base distro
 
@@ -20,7 +20,7 @@ kofi = "https://ko-fi.com/tigerclips1" #support me on my kofi
 
 promo = "ps4linux.com" #promote PS4linux.com
 
-error2 = "Yu don't have an arch base dsitro" #print error on the screen
+error2 = "You don't have an arch base distro" #print error on the screen
 
 error3 = "You don't have an fedora base distro" #print error on the screen
 
@@ -56,7 +56,7 @@ PS4_Recovery_405 = "wget https://archive.org/download/PS4-Recovery-Firmwares/Fir
 
 PS4_Recovery_176 = "wget https://archive.org/download/PS4-Recovery-Firmwares/Firmware%201.76/PS4UPDATE.PUP"  #download the PS4 1.76 Recovery firmware
 
-change = f"/media/{name}/{USB}" #change directorys
+change = f"/media/{name}/{USB}" #change directories
 
 make = f"sudo mkdir PS4" #make directory
 
@@ -64,9 +64,9 @@ change2 = f"/media/{name}/{USB}/PS4/" #change directory
 
 make2 = "sudo mkdir UPDATE" #make directory
 
-change3 = f"/media/{name}/{USB}/PS4/UPDATE" #change directorys
+change3 = f"/media/{name}/{USB}/PS4/UPDATE" #change directories
 
-def menu (): #function to keep thing nice
+def menu (): #function to keep things nice
     while True: #loop the menu
     
         print ("[1]You want To Install 9.00 PS4 Update to your USB") #print text of the menu on the screen
@@ -128,9 +128,9 @@ def menu (): #function to keep thing nice
 
         elif option == "9": #if option1 is selected then it will load the 2 menu
         
-            menu2() #call  menu2
+            menu2() #call menu2 function
     
-        elif option == "10": #if the player hit exit then this will call this if satement
+        elif option == "10": #if the player hit exit then this will call this if statement
             break#break out of the loop when you type 10
             
         
@@ -170,55 +170,55 @@ def menu2(): #function to keep thing nice
         option = input("Enter the PS4 firmware you want to install: ") #get input from user
 
         
-        if option == "1": #if satement
+        if option == "1": #if statement
     
             os.system(PS4_Recovery_900) #if you type one then it will install PS4 9.00 Recovery
     
-        elif option == "2": #elif satement
+        elif option == "2": #elif statement
     
             os.system(PS4_Recovery_505) #if you type one then it will install PS4 5.05 Recovery
-        elif option == "3": #elif satement
+        elif option == "3": #elif statement
     
             os.system(PS4_Recovery_755) #if you type one then it will install PS4 7.55 Recovery
 
-        elif option == "4": #elif satement
+        elif option == "4": #elif statement
     
             os.system(PS4_Recovery_702) #if you type one then it will install PS4 7.02 Recovery
 
-        elif option == "5": #elif satement
+        elif option == "5": #elif statement
     
             os.system(PS4_Recovery_672) #if you type one then it will install PS4 6.72 Recovery
 
-        elif option == "6": #elif satement
+        elif option == "6": #elif statement
     
             os.system(PS4_Recovery_455) #if you type one then it will install PS4 4.55 Recovery
 
-        elif option == "7": #elif satement
+        elif option == "7": #elif statement
     
             os.system(PS4_Recovery_405) #if you type one then it will install PS4 4.05 Recovery
 
-        elif option == "8": #elif satement
+        elif option == "8": #elif statement
     
             os.system(PS4_Recovery_176) #if you type one then it will install PS4 1.76 Recovery
 
-        elif option == "9": #elif satement
-            break #break out of the loop onece you type 9
+        elif option == "9": #elif statement
+            break #break out of the loop once you type 9
         else:
             print("Invalid option. Please try again.") #print the error on your screen
 
-def linux2(): #function keep thing nice
+def linux2(): #function keep things nice
     
-    ArchLinux = os.popen(Arch) # this function will install all requriement on arch base distro
+    ArchLinux = os.popen(Arch) # this function will install all requirement on arch base distro
     
     output2 = ArchLinux.readlines() #check if you on a arch base distro
     
     print(error2) #print error on your screen
 
-def linux3(): #function keep thing nice
+def linux3(): #function keep things nice
     
-    FedoraLinux = os.popen(Fedora) #this function will install all requriement on fedora base distro
+    FedoraLinux = os.popen(Fedora) #this function will install all requirements on fedora base distro
     
-    output3 = FedoraLinux.readlines() #check if you on a fedora base distro
+    output3 = FedoraLinux.readlines() #check if you on a fedora based distro
     
     print(error3)#print error on your screen
 
@@ -231,15 +231,15 @@ def credits(): #function
     print(promo, sep = "\n") #promote ps4linux.com
 
 def Main(): #function
-        os.chdir(change)#change directorys
+        os.chdir(change)#change directories
     
-        os.system(make)#make directorys
+        os.system(make)#make directories
     
-        os.chdir(change2) #change directorys
+        os.chdir(change2) #change directories
     
-        os.system(make2) #make directorys
+        os.system(make2) #make directories
     
-        os.chdir(change3) #change directorys
+        os.chdir(change3) #change directories
 
 linux2()#call the function
 
@@ -252,4 +252,4 @@ menu() #call the function
 credits() #call the function
 
 
-## kill me  lol jk ##
+## kill me lol jk ##

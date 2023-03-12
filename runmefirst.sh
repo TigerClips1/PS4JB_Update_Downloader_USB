@@ -8,6 +8,6 @@ cd /media/$USER/ #change directorys
 
 ls -al #list all directory 
 
-echo "here your USB name " #print text on the screen
+echo "Here's your USB name " #print text on the screen
 
-echo "now you ready to run the python script" #print text on the screen
+echo "Now your ready to run the python script" #print text on the screen
