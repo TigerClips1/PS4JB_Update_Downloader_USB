@@ -1,5 +1,7 @@
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/tigerclips1)
 
+Copyright  TigerClips1 © 2023 All Rights Reserved
+
 ### Team ###
 
 [TigerClips1](https://github.com/TigerClips1) - coding
