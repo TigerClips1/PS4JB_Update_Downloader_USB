@@ -6,8 +6,9 @@ import os #import os mudules
 
 name = input("Please Enter your  linux name on your linux PC or WSL or VM: ") #ask for the Linux username
 
-USB = input("Please Enter your USB dircotry name: ") #ask the user for the usb name witch can be obtain on the RunMefirst.sh
+print("if you don't know the path to your USb run the runmefirst.sh then you will see your usb path\n")
 
+USB = input("Please Enter your USB dircotry name: ") #ask the user for the usb name witch can be obtain on the RunMefirst.sh
 
 Arch = "sudo pacman -Syyu && sudo pacman -S wget" #install Requirement for Arch base distro
 
@@ -18,7 +19,6 @@ credit = "Script By TigerClips1" #give me credit
 kofi = "https://ko-fi.com/tigerclips1" #support me on my kofi
 
 promo = "ps4linux.com" #promote PS4linux.com
-
 
 error2 = "Yu don't have an arch base dsitro" #print error on the screen
 
@@ -67,53 +67,144 @@ make2 = "sudo mkdir UPDATE" #make directory
 change3 = f"/media/{name}/{USB}/PS4/UPDATE" #change directorys
 
 def menu (): #function to keep thing nice
+    while True: #loop the menu
     
-    print ("[1]You want To Install 9.00 PS4 Update to your USB") #print text of the menu on the screen
+        print ("[1]You want To Install 9.00 PS4 Update to your USB") #print text of the menu on the screen
     
-    print ("[2]You want To Install 5.05 PS4 Update to your USB") #print text of the menu on the screen
+        print ("[2]You want To Install 5.05 PS4 Update to your USB") #print text of the menu on the screen
     
-    print ("[3]You want To Install 7.55 PS4 Update to your USB") #print text of the menu on the screen
+        print ("[3]You want To Install 7.55 PS4 Update to your USB") #print text of the menu on the screen
     
-    print ("[4]You want To Install 7.02 PS4 Update to your USB") #print text of the menu on the screen
+        print ("[4]You want To Install 7.02 PS4 Update to your USB") #print text of the menu on the screen
     
-    print ("[5]You want To Install 6.72 PS4 Update to your USB") #print text of the menu on the screen
+        print ("[5]You want To Install 6.72 PS4 Update to your USB") #print text of the menu on the screen
     
-    print ("[6]You want To Install 4.55 PS4 Update to your USB") #print text of the menu on the screen
+        print ("[6]You want To Install 4.55 PS4 Update to your USB") #print text of the menu on the screen
     
-    print ("[7]You want To Install 4.05 PS4 Update to your USB") #print text of the menu on the screen
+        print ("[7]You want To Install 4.05 PS4 Update to your USB") #print text of the menu on the screen
     
-    print ("[8]You want To Install 1.76 PS4 Update to your USB") #print text of the menu on the screen
+        print ("[8]You want To Install 1.76 PS4 Update to your USB") #print text of the menu on the screen
     
-    print ("[9]Next Page") #print text of the menu on the screen
+        print ("[9]Next Page") #print text of the menu on the screen
 
-    print ("[10]EXIT") #print text of the menu on the screen
+        print ("[10]EXIT") #print text of the menu on the screen
 
-menu()#call the function
+        option = input("Enter the PS4 firmware you want to install: ") #get input from user
 
-option = int(input('Enter your PS4 firmware: ')) #get input from user when using the menu
+
+        
+        if option == "1":   #if option1 is selected then it will install PS4 9.00 Normal Firmware Update
+            
+            os.system(PS4_900) #this download the 9.00 Normal Firmware Update to your USB
+
+    
+        elif option == "2": #if option2 is selected then it will install PS4 5.05 Normal Firmware Update
+        
+            os.system(PS4_505)  #this download the 5.05 Normal Firmware Update to your USB
+    
+        elif option == "3": #if option3 is selected then it will install PS4 7.55 Normal Firmware Update
+        
+            os.system(PS4_755)  #this download the 7.55 Normal Firmware Update to your USB
+         
+        elif option == "4": #if option4 is selected then it will install PS4 7.02 Normal Firmware Update
+        
+            os.system(PS4_702)  #this download the 7.02 Normal Firmware Update to your USB
+    
+        elif option == "5": #if option5 is selected then it will install PS4 6.72 Normal Firmware Update
+        
+            os.system(PS4_672)  #this download the 6.72 Normal Firmware Update to your USB
+    
+        elif option == "6": #if option6 is selected then it will install PS4 4.55 Normal Firmware Update
+     
+            os.system(PS4_455)  #this download the 4.55 Normal Firmware Update to your USB
+        
+        elif option == "7": #if option7 is selected then it will install PS4 4.05 Normal Firmware Update
+        
+            os.system(PS4_405)  #this download the 4.05 Normal Firmware Update to your USB
+
+        elif option == "8": #if option8 is selected then it will install PS4 1.76 Normal Firmware Update
+        
+            os.system(PS4_176)  #this download the 1.76 Normal Firmware Update to your USB
+
+        elif option == "9": #if option1 is selected then it will load the 2 menu
+        
+            menu2() #call  menu2
+    
+        elif option == "10": #if the player hit exit then this will call this if satement
+            break#break out of the loop when you type 10
+            
+        
+            print(credit, sep= "\n") #print the credit on the screen when done
+        
+            print(kofi, sep = "\n") #print my kofi page on the screen
+        
+            print(promo, sep = "\n") #promote ps4linux.com
+        
+            exit() #exit the program
+        
+        else:
+          print("Invalid option. Please try again.") #print the error on your screen
+          
 
 def menu2(): #function to keep thing nice
-    print ("[11]You want To Install Recovery  9.00 PS4 Update to your USB") #print text of the menu on the screen
-    
-    print ("[12]You want To Install Recovery 5.05 PS4 Update to your USB") #print text of the menu on the screen
-    
-    print ("[13]You want To Install Recovery 7.55 PS4 Update to your USB") #print text of the menu on the screen
-    
-    print ("[14]You want To Install Recovery 7.02 PS4 Update to your USB") #print text of the menu on the screen
-    
-    print ("[15]You want To Install Recovery 6.72 PS4 Update to your USB") #print text of the menu on the screen
-    
-    print ("[16]You want To Install Recovery 4.55 PS4 Update to your USB") #print text of the menu on the screen
-    
-    print ("[17]You want To Install Recovery 4.05 PS4 Update to your USB") #print text of the menu on the screen
-    
-    print ("[18]You want To Install Recovery 1.76 PS4 Update to your USB") #print text of the menu on the screen
-    
-    print("[19]Back") #print text of the menu on the screen
-    
-    print ("[20]EXIT") #print text of the menu on the screen 
+    while True: #loop the menu
 
+        print ("[1]You want To Install Recovery  9.00 PS4 Update to your USB") #print text of the menu on the screen
+    
+        print ("[2]You want To Install Recovery 5.05 PS4 Update to your USB") #print text of the menu on the screen
+    
+        print ("[3]You want To Install Recovery 7.55 PS4 Update to your USB") #print text of the menu on the screen
+    
+        print ("[4]You want To Install Recovery 7.02 PS4 Update to your USB") #print text of the menu on the screen
+    
+        print ("[5]You want To Install Recovery 6.72 PS4 Update to your USB") #print text of the menu on the screen
+    
+        print ("[6]You want To Install Recovery 4.55 PS4 Update to your USB") #print text of the menu on the screen
+    
+        print ("[7]You want To Install Recovery 4.05 PS4 Update to your USB") #print text of the menu on the screen
+    
+        print ("[8]You want To Install Recovery 1.76 PS4 Update to your USB") #print text of the menu on the screen
+    
+        print("[9]Back") #print text of the menu on the screen
+        
+        option = input("Enter the PS4 firmware you want to install: ") #get input from user
 
+        
+        if option == "1": #if satement
+    
+            os.system(PS4_Recovery_900) #if you type one then it will install PS4 9.00 Recovery
+    
+        elif option == "2": #elif satement
+    
+            os.system(PS4_Recovery_505) #if you type one then it will install PS4 5.05 Recovery
+        elif option == "3": #elif satement
+    
+            os.system(PS4_Recovery_755) #if you type one then it will install PS4 7.55 Recovery
+
+        elif option == "4": #elif satement
+    
+            os.system(PS4_Recovery_702) #if you type one then it will install PS4 7.02 Recovery
+
+        elif option == "5": #elif satement
+    
+            os.system(PS4_Recovery_672) #if you type one then it will install PS4 6.72 Recovery
+
+        elif option == "6": #elif satement
+    
+            os.system(PS4_Recovery_455) #if you type one then it will install PS4 4.55 Recovery
+
+        elif option == "7": #elif satement
+    
+            os.system(PS4_Recovery_405) #if you type one then it will install PS4 4.05 Recovery
+
+        elif option == "8": #elif satement
+    
+            os.system(PS4_Recovery_176) #if you type one then it will install PS4 1.76 Recovery
+
+        elif option == "9": #elif satement
+            break #break out of the loop onece you type 9
+        else:
+            print("Invalid option. Please try again.") #print the error on your screen
 
 def linux2(): #function keep thing nice
     
@@ -122,250 +213,33 @@ def linux2(): #function keep thing nice
     output2 = ArchLinux.readlines() #check if you on a arch base distro
     
     print(error2) #print error on your screen
-#TODO comeplate the readme with Kwhitehead07  and add comments to all the other code fix spelling error tomorrow
 
-def linux3():
+def linux3(): #function keep thing nice
     
-    FedoraLinux = os.popen(Fedora)
+    FedoraLinux = os.popen(Fedora) #this function will install all requriement on fedora base distro
     
-    output3 = FedoraLinux.readlines()
+    output3 = FedoraLinux.readlines() #check if you on a fedora base distro
     
-    print(error3)
+    print(error3)#print error on your screen
 
-def Main():
-    os.chdir(change)
+def credits(): #function
     
-    os.system(make)
-    
-    os.chdir(change2)
-    
-    os.system(make2)
-    
-    os.chdir(change3)
-    
-    if option == 1:
-        os.system(PS4_900)
-    
-    else:
+    print(credit, sep= "\n") #print the credit on the screen when done
         
-        print("you did not want to install PS4 9.00")
-    
-    if option == 2:
+    print(kofi, sep = "\n") #print my kofi page on the screen
         
-        os.system(PS4_505)
-    else:
-        
-        print("you do not want to install Ps4 5.05")
-   
-    if option == 3:
-        
-        os.system(PS4_755)
-    
-    else:
-        
-        print("You do not want to install 7.55 PS4")
-    
-    if option == 4:
-        
-        os.system(PS4_702)
-    
-    else:
-        
-        print("you do not want to install PS4 7.02 ")
-    
-    if option == 5:
-        
-        os.system(PS4_672)
-    
-    else:
-        
-        print("you do not want to install PS4 6.72")
-    
-    if option == 6:
-     
-     os.system(PS4_455)
-    
-    else:
-        
-        print("you don't want to install PS4 4.55")
-    
-    if option == 7:
-        
-        os.system(PS4_405)
-    
-    else:
-        
-        print("you dont't want to install PS4 4.05")
-    
-    if option == 8:
-        
-        os.system(PS4_176)
-    
-    else:
-        
-        print("You  dont want to install PS4 1.76")
-    
-    if option == 9:
-        
-        menu2()
-        
-        option2 = int(input('Enter your PS4 firmware: '))
-    
-    if option2 ==  19:
-        
-            menu()
-        
-        
-            option2 = int(input('Enter your PS4 firmware: '))
+    print(promo, sep = "\n") #promote ps4linux.com
 
-    if option == 10:
-        
-        print(credit, sep= "\n")
-        
-        print(kofi, sep = "\n")
-        
-        print(promo, sep = "\n")
-        
-        exit()
-
-    if option2 == 1:
-        os.system(PS4_900)
-    else:   
-            print("you did not want to install PS4 9.00")
+def Main(): #function
+        os.chdir(change)#change directorys
     
-    if option2 == 2:
-        
-        os.system(PS4_505)
-    else:
-        
-        print("you do not want to install Ps4 5.05")
-   
-    if option2 == 3:
-        
-        os.system(PS4_755)
+        os.system(make)#make directorys
     
-    else:
-        
-        print("You do not want to install 7.55 PS4")
+        os.chdir(change2) #change directorys
     
-    if option2 == 4:
-        
-        os.system(PS4_702)
+        os.system(make2) #make directorys
     
-    else:
-        
-        print("you do not want to install PS4 7.02 ")
-    
-    if option2 == 5:
-        
-        os.system(PS4_672)
-    
-    else:
-        
-        print("you do not want to install PS4 6.72")
-    
-    if option == 6:
-     
-     os.system(PS4_455)
-    
-    else:
-        
-        print("you don't want to install PS4 4.55")
-    
-    if option2 == 7:
-        
-        os.system(PS4_405)
-    
-    else:
-        
-        print("you dont't want to install PS4 4.05")
-    
-        if option2 == 8:
-        
-            os.system(PS4_176) 
-        else:
-            print("You  dont want to install PS4 1.76")
-    if option2 == 9:
-        menu2()
-    
-    option2 = int(input('Enter your PS4 firmware: '))
-
-    if option2 == 20:
-
-            
-        print(credit, sep= "\n")
-        
-        print(kofi, sep = "\n")
-        
-        print(promo, sep = "\n")
-        
-        exit()
-
-def Main2():   
-    if option2 == 11:
-    
-        os.system(PS4_Recovery_900)
-
-    else:
-    
-        print("You don't want to install PS4 9.00 Recovery")
-
-    if option2 == 12:
-    
-        os.system(PS4_Recovery_505)
-
-    else:
-    
-        print("you don't want to install PS4 5.05 Recovery")
-
-    if option2 == 13:
-    
-        os.system(PS4_Recovery_755)
-
-    else:
-    
-        print("you don't want to install PS4 7.55 Recovery")
-
-    if option2 == 14:
-    
-        os.system(PS4_Recovery_702)
-
-    else:
-    
-        print("you don't want to install PS4 7.02 Recovery")
-
-    if option2 == 15:
-    
-        os.system(PS4_Recovery_672)
-    else:
-    
-        print("you don't want to install PS4 6.72 Recovery")
-
-    if option2 == 16:
-    
-        os.system(PS4_Recovery_455)
-
-    else:
-    
-        print("you don't want to install PS4 4.55 Recovery")
-
-    if option2 == 17:
-    
-        os.system(PS4_Recovery_405)
-
-    else:
-    
-        print("you don't want to install PS4 4.05 Recovery")
-
-    if option2 == 18:
-    
-        os.system(PS4_Recovery_176)
-
-    else:
-    
-        print("you don't want to install PS4 1.76 Recovery")
-
-linux1() #call the function
+        os.chdir(change3) #change directorys
 
 linux2()#call the function
 
@@ -373,4 +247,9 @@ linux3() #call the function
 
 Main() #call the function
 
-Main2() #call the function
+menu() #call the function
+
+credits() #call the function
+
+
+## kill me  lol jk ##
