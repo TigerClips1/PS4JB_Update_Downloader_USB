@@ -347,7 +347,7 @@ def Main2():
 
     else:
     
-        prnt("you don't want to install PS4 4.55 Recovery")
+        print("you don't want to install PS4 4.55 Recovery")
 
     if option2 == 17:
     
