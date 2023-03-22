@@ -66,6 +66,12 @@ make2 = "sudo mkdir UPDATE" #make directory
 
 change3 = f"/media/{name}/{USB}/PS4/UPDATE" #change directories
 
+if os.geteuid() != 0:
+        print("Please run this script as root if you don't want to keep on entering your password")
+        exit()
+else:
+        print("setting up")
+
 def menu (): #function to keep things nice
     while True: #loop the menu
     
