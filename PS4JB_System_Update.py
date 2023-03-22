@@ -66,6 +66,8 @@ make2 = "sudo mkdir UPDATE" #make directory
 
 change3 = f"/media/{name}/{USB}/PS4/UPDATE" #change directories
 
+#fell safe let the user know to run the script as root
+
 if os.geteuid() != 0:
         print("Please run this script as root if you don't want to keep on entering your password")
         exit()
