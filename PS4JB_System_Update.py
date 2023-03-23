@@ -76,6 +76,7 @@ if os.geteuid() != 0:
 else:
         print("setting up")
 
+#clear all text in the termnal or cmd
 if clear:
     os.system(clear)
 else:
