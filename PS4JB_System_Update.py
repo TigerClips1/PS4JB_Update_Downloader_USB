@@ -66,6 +66,8 @@ make2 = "sudo mkdir UPDATE" #make directory
 
 change3 = f"/media/{name}/{USB}/PS4/UPDATE" #change directories
 
+clear = "clear"
+
 #fell safe let the user know to run the script as root
 
 if os.geteuid() != 0:
@@ -73,6 +75,11 @@ if os.geteuid() != 0:
         exit()
 else:
         print("setting up")
+
+if clear:
+    os.system(clear)
+else:
+    os.system("cls")
 
 def menu (): #function to keep things nice
     while True: #loop the menu
